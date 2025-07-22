@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn_Here - Courses</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Learn_Here</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- 🎓 Hero Image Slider -->
+ <section class="hero-slider">
+  <div class="slider">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Slide 1" class="slide active" />
+    <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=800&q=80" alt="Slide 2" class="slide" />
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Slide 3" class="slide" />
+  </div>
+</section>
+
+
+  <!-- 📚 Course Cards -->
+  <main>
+    <section class="course-list">
+      <h2>Available Courses📚 </h2>
+
+      <div class="course-card" onclick="location.href='course.html?course=js'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript">
+        <h3>JavaScript for Beginners</h3>
+        <p>Learn the basics of JavaScript programming.</p>
+      </div>
+
+      <div class="course-card" onclick="location.href='course.html?course=html-css'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML & CSS">
+        <h3>HTML & CSS Mastery</h3>
+        <p>Build beautiful, responsive websites.</p>
+      </div>
+      <div class="course-card" onclick="location.href='course.html?course=python'">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+  <h3>Python for Everybody</h3>
+  <p>Start programming with Python, one of the most popular languages.</p>
+</div>
+
+<div class="course-card" onclick="location.href='course.html?course=react'">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+  <h3>React JS Essentials</h3>
+  <p>Learn to build dynamic user interfaces with React.</p>
+</div>
+
+<div class="course-card" onclick="location.href='course.html?course=sql'">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" style="background:white; padding:10px; border-radius:8px;">
+  <h3>Mastering SQL</h3>
+  <p>Query and manage databases efficiently using SQL.</p>
+</div>
+
+<div class="course-card" onclick="location.href='course.html?course=aws'">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" style="background:white; padding:10px; border-radius:8px;">
+  <h3>AWS Cloud Fundamentals</h3>
+  <p>Get started with cloud computing on AWS platform.</p>
+</div>
+
+    </section>
+  </main>
+
+  <script>
+    // Basic image slider logic
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  </script>
+</body>
+</html>
