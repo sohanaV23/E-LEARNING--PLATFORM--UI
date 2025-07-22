@@ -42,3 +42,9 @@
 - Enhanced animations and accessibility features.
 
 ## Output 
+
+<img width="1884" height="1009" alt="Image" src="https://github.com/user-attachments/assets/e4306eb9-f22d-400b-b1a5-b2e95dd847ee" />
+
+<img width="1879" height="899" alt="Image" src="https://github.com/user-attachments/assets/c4db404a-5eb1-49b9-bb69-f0cb08b36148" />
+
+<img width="1872" height="905" alt="Image" src="https://github.com/user-attachments/assets/c0da6a81-b0a8-4cc0-bd8c-1026f550b3bc" />
